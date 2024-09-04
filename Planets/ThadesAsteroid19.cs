@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Ore_Randomizer.Classes;
+﻿using Ore_Randomizer.Classes;
 
-namespace Ore_Randomizer.Planets
+namespace Ore_Randomizer.Planets;
+
+public class ThadesAsteroid19 : Planet
 {
-    public class ThadesAsteroid19:Planet
+    public ThadesAsteroid19()
     {
-        public ThadesAsteroid19()
-        {
-            FileName = "orepools-419.json";
-            NumberOfTiles = 271;//This is a guess
-            OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 50, 400));
-            OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 50, 400));
-            OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 50, 400));
-            OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 50, 400));
-        }
+        FileName = "orepools-419.json";
+        NumberOfTiles = 271; //This is a guess
+        OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 50, 400));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 50, 400));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 50, 400));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 50, 400));
     }
 }
