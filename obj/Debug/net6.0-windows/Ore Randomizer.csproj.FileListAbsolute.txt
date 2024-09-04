@@ -1,0 +1,38 @@
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\bin\Debug\net6.0-windows\Ore Randomizer.exe
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\bin\Debug\net6.0-windows\Ore Randomizer.deps.json
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\bin\Debug\net6.0-windows\Ore Randomizer.runtimeconfig.json
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\bin\Debug\net6.0-windows\Ore Randomizer.dll
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\bin\Debug\net6.0-windows\Ore Randomizer.pdb
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.csproj.AssemblyReference.cache
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore_Randomizer.Form1.resources
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.csproj.GenerateResource.cache
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.AssemblyInfoInputs.cache
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.AssemblyInfo.cs
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.csproj.CoreCompileInputs.cache
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.csproj.CopyComplete
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.dll
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\refint\Ore Randomizer.dll
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.pdb
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\Ore Randomizer.genruntimeconfig.cache
+C:\TFS\General Projects\OreRandomizer\Ore Randomizer\obj\Debug\net6.0-windows\ref\Ore Randomizer.dll
+C:\Source Tree\DuOreRandomizer\bin\Debug\net6.0-windows\Ore Randomizer.exe
+C:\Source Tree\DuOreRandomizer\bin\Debug\net6.0-windows\Ore Randomizer.deps.json
+C:\Source Tree\DuOreRandomizer\bin\Debug\net6.0-windows\Ore Randomizer.runtimeconfig.json
+C:\Source Tree\DuOreRandomizer\bin\Debug\net6.0-windows\Ore Randomizer.dll
+C:\Source Tree\DuOreRandomizer\bin\Debug\net6.0-windows\Ore Randomizer.pdb
+C:\Source Tree\DuOreRandomizer\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.csproj.AssemblyReference.cache
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore_Randomizer.Form1.resources
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.csproj.GenerateResource.cache
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.AssemblyInfoInputs.cache
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.AssemblyInfo.cs
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.csproj.CoreCompileInputs.cache
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.csproj.CopyComplete
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.dll
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\refint\Ore Randomizer.dll
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.pdb
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\Ore Randomizer.genruntimeconfig.cache
+C:\Source Tree\DuOreRandomizer\obj\Debug\net6.0-windows\ref\Ore Randomizer.dll
