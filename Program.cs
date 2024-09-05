@@ -11,9 +11,8 @@ namespace Ore_Randomizer
         [STAThread]
         static void Main()
         {
-
             new Alioth().GenerateOrePool();
-            return;
+            
             new AliothMoon1().GenerateOrePool();
 
             new AliothMoon4().GenerateOrePool();

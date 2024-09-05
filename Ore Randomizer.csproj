@@ -14,8 +14,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Backend">
+      <HintPath>Dlls\Backend.dll</HintPath>
+    </Reference>
+    <Reference Include="Backend.PubSub">
+      <HintPath>Dlls\Backend.PubSub.dll</HintPath>
+    </Reference>
+    <Reference Include="BotLib">
+      <HintPath>Dlls\BotLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interfaces">
+      <HintPath>Dlls\Interfaces.dll</HintPath>
+    </Reference>
     <Reference Include="NQutils">
       <HintPath>Dlls\NQutils.dll</HintPath>
+    </Reference>
+    <Reference Include="Router">
+      <HintPath>Dlls\Router.dll</HintPath>
+    </Reference>
+    <Reference Include="Router.Orleans">
+      <HintPath>Dlls\Router.Orleans.dll</HintPath>
     </Reference>
   </ItemGroup>
 
