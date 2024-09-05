@@ -8,8 +8,10 @@ namespace Ore_Randomizer.Classes
 {
     public interface iPlanet
     {
-     public   string FileName { get; set; }
-    public    int NumberOfTiles { get; set; }
-    public   List<PlanetOreDef> OnPlanetOres { get; set; }
+        public double altitudeReferenceRadius { get; set; }
+        public double territoryTileSize { get; set; }
+        public string FileName { get; set; }
+        public int NumberOfTiles { get; set; }
+        public List<PlanetOreDef> OnPlanetOres { get; set; }
     }
 }

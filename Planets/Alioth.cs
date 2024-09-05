@@ -11,6 +11,8 @@ namespace Ore_Randomizer.Planets
     {
         public Alioth()
         {
+            altitudeReferenceRadius = 126067.8984375;
+            territoryTileSize = 500.0000305175781;
             FileName = "orepools-2.json";
             NumberOfTiles = 259471;
             OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 50, 400));

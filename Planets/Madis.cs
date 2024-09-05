@@ -11,6 +11,8 @@ namespace Ore_Randomizer.Planets
     {
         public Madis()
         {
+            altitudeReferenceRadius = 45000.0;
+            territoryTileSize = 500.0;
             FileName = "orepools-1.json";
             NumberOfTiles = 30721;
             OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 50, 400));

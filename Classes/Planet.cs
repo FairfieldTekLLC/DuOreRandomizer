@@ -30,8 +30,10 @@ A list of Materials, together with resources they are refined from looks as foll
      */
 
 
-    public class Planet : iPlanet
+    public  class Planet : iPlanet
     {
+        public double altitudeReferenceRadius { get; set; }
+        public double territoryTileSize { get; set; }
         public string FileName { get; set; }
         public int NumberOfTiles { get; set; }
         public List<PlanetOreDef> OnPlanetOres { get; set; } = new List<PlanetOreDef>();

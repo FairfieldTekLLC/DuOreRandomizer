@@ -11,6 +11,9 @@ namespace Ore_Randomizer.Planets
     {
         public Thades()
         {
+            altitudeReferenceRadius = 49000.0;
+            territoryTileSize = 500.0;
+            
             FileName = "orepools-3.json";
             NumberOfTiles = 38881;
             OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 50, 400));

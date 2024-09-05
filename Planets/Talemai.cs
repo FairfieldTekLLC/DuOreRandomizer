@@ -11,6 +11,8 @@ namespace Ore_Randomizer.Planets
     {
         public Talemai()
         {
+            altitudeReferenceRadius = 57500.0;
+            territoryTileSize = 500.0;
             FileName = "orepools-4.json";
             NumberOfTiles = 52922;//This is a guess
             OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 50, 400));
