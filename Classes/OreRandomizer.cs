@@ -1,146 +1,103 @@
-﻿using System.Diagnostics;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using Microsoft.VisualBasic.CompilerServices;
-using NQ;
-using NQutils.Core.Shared;
+﻿namespace Ore_Randomizer.Classes;
 
-namespace Ore_Randomizer.Classes
+
+public static class OreRandomizer
 {
-    using System.Runtime.InteropServices;
-    using NQ;
-
-
-
-
-
-
-
-
-    public class Pair
+    /// <summary>
+    /// This function generates the ore file for each planet.
+    /// </summary>
+    /// <param name="planet"></param>
+    public static void GenerateOrePool(this IIPlanet planet)
     {
-        public int TileId { get; set; }
-        public int Amount { get; set; }
-
-        public Pair(int tileId, int amount)
+        //function writes data to the file.
+        void WriteData(string data)
         {
-            TileId = tileId;
-            Amount = amount;
+            File.AppendAllText(planet.FileName, data + "\r\n");
         }
-    }
 
-
-
-
-
-    public static class OreRandomizer
-    {
-
-        //public static void GenerateOrePool2(this iPlanet planet)
-        //{
-        //    List<Pair> Tiles = new();
-        //    //Initialize the collection with 0s
-        //    for (int i = 1; i <= planet.NumberOfTiles; i++)
-        //        Tiles.Add(new Pair(i, 0));
-
-        //    uint[] surrounds = new uint[10];
-        //    Tile.NQGetTileNeighbours(planet.altitudeReferenceRadius, planet.territoryTileSize, 1, surrounds);
-        //    Debug.WriteLine(surrounds);
-
-        //}
-
-
-
-
-        public static void GenerateOrePool(this iPlanet planet)
+        //function writes tile data
+        void Poa(int tile, int amount)
         {
+            File.AppendAllText(planet.FileName,
+                tile != planet.NumberOfTiles
+                    ? $"        \"{tile}\" : {amount},\r\n"
+                    : $"        \"{tile}\" : {amount} \r\n");
+        }
 
+        //If the pool file exists delete it.
+        if (File.Exists(planet.FileName))
+            File.Delete(planet.FileName);
 
+        //Start a new file
+        File.WriteAllText(planet.FileName, "");
 
-            void WriteData(string data)
+        //Generate a random seed
+        var random = new Random();
+
+        //Write opening brace
+        WriteData("{");
+
+        
+        int oreIdx = 1;
+        int maxOreIdx = planet.OnPlanetOres.Count;
+
+        
+        Console.WriteLine("Processing Planet: " + planet.GetType());
+        //Foreach ore definition in the planets ore defs.
+        foreach (var def in planet.OnPlanetOres)
+        {
+            Console.WriteLine("Processing Ore Type: " + def.OreType);
+            WriteData($"    \"{def.OreType}\": {{");
+
+            int tileId = 1;
+            while (tileId <= planet.NumberOfTiles)
             {
-                File.AppendAllText(planet.FileName, data + "\r\n");
-            }
-
-            void Poa(int tile, int amount)
-            {
-                if (tile != planet.NumberOfTiles)
-                    File.AppendAllText(planet.FileName, $"        \"{tile}\" : {amount},\r\n");
-                else
-                    File.AppendAllText(planet.FileName, $"        \"{tile}\" : {amount} \r\n");
-
-            }
-
-            if (File.Exists(planet.FileName))
-                File.Delete(planet.FileName);
-
-            File.WriteAllText(planet.FileName, "");
-
-
-
-            Random random = new Random();
-
-            WriteData("{");
-
-
-            int oreIdx = 1;
-            int maxOreIdx = planet.OnPlanetOres.Count;
-
-            Console.WriteLine("Processing Planet: " + planet.GetType());
-            foreach (PlanetOreDef def in planet.OnPlanetOres)
-            {
-                Console.WriteLine("Processing Ore Type: " + def.OreType);
-                WriteData($"    \"{def.OreType}\": {{");
-
-                int tileId = 1;
-                while (tileId <= planet.NumberOfTiles)
+                Console.WriteLine("Processing Tile: " + tileId);
+                //If the ore chance is 100 percent than just pull a random in range and continue.
+                if (def.ChanceOfHavingOre == 100)
                 {
-                    Console.WriteLine("Processing Tile: " + tileId);
-                    if (def.ChanceOfHavingOre == 100)
-                    {
-                        int oreAmount = random.Next(0, def.MaxAmount);
-                        Poa(tileId, oreAmount);
-                        tileId++;
-                        continue;
-                    }
-
-                    int rnd = random.Next(0, 100);
-                    if (rnd < def.ChanceOfHavingOre)
-                    {
-                        if (def.MaxRun == 0)
-                        {
-                            def.MaxRun = 1;
-                        }
-
-                        int run = random.Next(1, def.MaxRun);
-                        for (int i = 0; i < run; i++)
-                        {
-                            int oreAmount = random.Next(def.MinAmount, def.MaxAmount);
-                            tileId += i;
-                            if (tileId > planet.NumberOfTiles)
-                                break;
-                            Poa(tileId, oreAmount);
-                        }
-
-                        tileId++;
-                    }
-                    else
-                    {
-                        Poa(tileId, 0);
-                        tileId++;
-                    }
+                    int oreAmount = random.Next(def.MinAmount, def.MaxAmount);
+                    Poa(tileId, oreAmount);
+                    tileId++;
+                    continue;
                 }
 
-                
-                if (oreIdx < maxOreIdx)
-                    WriteData("    },");
+                //Now we handle runs.
+                int rnd = random.Next(0, 100);
+                //Do we have ore?
+                if (rnd < def.ChanceOfHavingOre)
+                {
+                    if (def.MaxRun == 0) 
+                        def.MaxRun = 1;
+
+                    //how long is the run?
+                    int run = random.Next(1, def.MaxRun);
+                    
+                    //for the next run tileid's lets give them the same ore.
+                    for (int i = 0; i < run; i++)
+                    {
+                        
+                        int oreAmount = random.Next(def.MinAmount, def.MaxAmount);
+                        tileId += i;
+                        if (tileId > planet.NumberOfTiles)
+                            break;
+                        Poa(tileId, oreAmount);
+                    }
+
+                    tileId++;
+                }
                 else
-                    WriteData("    }");
-                oreIdx++;
-
+                {
+                    Poa(tileId, 0);
+                    tileId++;
+                }
             }
-            WriteData("}");
 
+
+            WriteData(oreIdx < maxOreIdx ? "    }," : "    }");
+            oreIdx++;
         }
+
+        WriteData("}");
     }
 }
