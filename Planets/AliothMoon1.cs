@@ -6,6 +6,8 @@ public class AliothMoon1 : Planet
 {
     public AliothMoon1()
     {
+        VoxelGeometryRadius = 30000.0;
+        TerritoryTileSize = 500.0;
         FileName = "orepools-21.json";
         NumberOfTiles = 14521;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

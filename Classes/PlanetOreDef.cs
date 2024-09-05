@@ -2,13 +2,13 @@
 
 public class PlanetOreDef
 {
-    public PlanetOreDef(string oreType, int minAmount, int maxAmount, int chanceOfHavingOre = 100, int maxRun = 0)
+    public PlanetOreDef(string oreType, int minAmount, int maxAmount, int chanceOfHavingOre = 100, int maxFlowerSize = 0)
     {
         OreType = oreType;
         MinAmount = minAmount;
         MaxAmount = maxAmount;
         ChanceOfHavingOre = chanceOfHavingOre;
-        MaxRun = maxRun;
+        MaxFlowerSize = maxFlowerSize;
     }
 
     /// <summary>
@@ -40,5 +40,5 @@ public class PlanetOreDef
     ///     If the tile has ore, how long of a run will the ore be.
     ///     It defaults to 0.
     /// </summary>
-    public int MaxRun { get; set; }
+    public int MaxFlowerSize { get; set; }
 }

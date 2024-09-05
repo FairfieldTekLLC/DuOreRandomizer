@@ -6,6 +6,8 @@ public class Sicari : Planet
 {
     public Sicari()
     {
+        VoxelGeometryRadius = 51000.0;
+        TerritoryTileSize = 500.0;
         FileName = "orepools-6.json";
         NumberOfTiles = 41071;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

@@ -6,6 +6,8 @@ public class ThadesAsteroid30 : Planet
 {
     public ThadesAsteroid30()
     {
+        VoxelGeometryRadius = 5215.189175235227;
+        TerritoryTileSize = 500.0;
         FileName = "orepools-430.json";
         NumberOfTiles = 271; //This is a guess
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

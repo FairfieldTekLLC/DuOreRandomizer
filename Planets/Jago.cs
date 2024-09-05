@@ -6,6 +6,8 @@ public class Jago : Planet
 {
     public Jago()
     {
+        VoxelGeometryRadius = 63000.0;
+        TerritoryTileSize =500.0 ;
         FileName = "orepools-9.json";
         NumberOfTiles = 60751;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));
