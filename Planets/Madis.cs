@@ -14,7 +14,7 @@ public class Madis : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.ChromiumOre, 10, 200, 40, 8));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.SulfurOre, 10, 200, 40, 9));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.ChromiumOre, 10, 200, 10, 8));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.SulfurOre, 10, 200, 10, 9));
     }
 }

@@ -12,8 +12,8 @@ public class Jago : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.SilverOre, 10, 200, 100, 7));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.CobaltOre, 10, 200, 30, 8));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.SilverOre, 10, 200, 10, 7));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.CobaltOre, 10, 200, 10, 8));
         OnPlanetOres.Add(new PlanetOreDef(Ores.TitaniumOre, 10, 200, 10, 5));
     }
 }

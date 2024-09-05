@@ -12,8 +12,8 @@ public class Sicari : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.SulfurOre, 10, 200, 40, 10));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.GoldOre, 10, 200, 30, 9));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.SulfurOre, 10, 200, 10, 10));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.GoldOre, 10, 200, 10, 9));
         OnPlanetOres.Add(new PlanetOreDef(Ores.VanadiumOre, 10, 200, 20, 5));
     }
 }

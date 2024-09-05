@@ -12,7 +12,7 @@ public class TalemaiMoon3 : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.SodiumOre, 10, 200, 50, 5));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.SodiumOre, 10, 200, 20, 5));
         OnPlanetOres.Add(new PlanetOreDef(Ores.ManganeseOre, 10, 200, 20, 4));
     }
 }

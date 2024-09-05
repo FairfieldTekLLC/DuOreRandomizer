@@ -12,7 +12,7 @@ public class ThadesMoon1 : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.CopperOre, 10, 200, 40));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.SulfurOre, 10, 200, 40));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.CopperOre, 10, 200, 20,8));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.SulfurOre, 10, 200, 20,8));
     }
 }
