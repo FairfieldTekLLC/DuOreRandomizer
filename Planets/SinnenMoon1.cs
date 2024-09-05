@@ -6,6 +6,8 @@ public class SinnenMoon1 : Planet
 {
     public SinnenMoon1()
     {
+        VoxelGeometryRadius = 17000.0;
+        TerritoryTileSize =500.0 ;
         FileName = "orepools-70.json";
         NumberOfTiles = 4321;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

@@ -6,6 +6,8 @@ public class ThadesMoon2 : Planet
 {
     public ThadesMoon2()
     {
+        VoxelGeometryRadius = 15000.0;
+        TerritoryTileSize =500.0 ;
         FileName = "orepools-31.json";
         NumberOfTiles = 3631;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

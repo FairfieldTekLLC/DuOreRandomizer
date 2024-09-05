@@ -67,11 +67,11 @@ public static class OreRandomizer
                 //Do we have ore?
                 if (rnd < def.ChanceOfHavingOre)
                 {
-                    if (def.MaxRun == 0) 
-                        def.MaxRun = 1;
+                    if (def.MaxFlowerSize == 0) 
+                        def.MaxFlowerSize = 1;
 
                     //how long is the run?
-                    int run = random.Next(1, def.MaxRun);
+                    int run = random.Next(1, def.MaxFlowerSize);
                     
                     //for the next run tileid's lets give them the same ore.
                     for (int i = 0; i < run; i++)

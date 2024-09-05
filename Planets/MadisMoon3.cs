@@ -6,6 +6,8 @@ public class MadisMoon3 : Planet
 {
     public MadisMoon3()
     {
+        VoxelGeometryRadius = 15000.0;
+        TerritoryTileSize = 500.0;
         FileName = "orepools-12.json";
         NumberOfTiles = 3631;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

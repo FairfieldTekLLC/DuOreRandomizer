@@ -6,6 +6,8 @@ public class TalemaiMoon3 : Planet
 {
     public TalemaiMoon3()
     {
+        VoxelGeometryRadius = 11000.0;
+        TerritoryTileSize = 500.0;
         FileName = "orepools-41.json";
         NumberOfTiles = 1921;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

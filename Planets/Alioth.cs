@@ -10,11 +10,11 @@ public class Alioth : Planet
         TerritoryTileSize = 500.0000305175781;
         FileName = "orepools-2.json";
         NumberOfTiles = 259471;
-        OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.CalciumOre, 10, 200, 15, 6));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400,100,20));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400, 100, 20));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400, 100, 20));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400, 100, 20));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.CalciumOre, 10, 200, 15, 14));
         OnPlanetOres.Add(new PlanetOreDef(Ores.NickelOre, 10, 200, 15, 7));
     }
 }
