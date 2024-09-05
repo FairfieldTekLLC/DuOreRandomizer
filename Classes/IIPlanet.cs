@@ -5,7 +5,7 @@
 /// </summary>
 public interface IIPlanet
 {
-    public double AltitudeReferenceRadius { get; set; }
+    public double VoxelGeometryRadius { get; set; }
     public double TerritoryTileSize { get; set; }
     public string FileName { get; set; }
     public int NumberOfTiles { get; set; }

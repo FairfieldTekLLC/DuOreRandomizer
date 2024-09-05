@@ -6,8 +6,8 @@ public class Alioth : Planet
 {
     public Alioth()
     {
-        AltitudeReferenceRadius = 126067.8984375;
-        TerritoryTileSize = 1000.0000305175781;
+        VoxelGeometryRadius = 126000;
+        TerritoryTileSize = 500.0000305175781;
         FileName = "orepools-2.json";
         NumberOfTiles = 259471;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

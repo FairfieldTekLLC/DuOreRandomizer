@@ -27,7 +27,7 @@ public class Planet : IIPlanet
     /// <summary>
     ///     Altitude Reference Radius--Will be used in future
     /// </summary>
-    public double AltitudeReferenceRadius { get; set; }
+    public double VoxelGeometryRadius { get; set; }
 
     /// <summary>
     ///     Territory Tile Size -- Will be used in future

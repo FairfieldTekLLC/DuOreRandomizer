@@ -6,7 +6,7 @@ public class Talemai : Planet
 {
     public Talemai()
     {
-        AltitudeReferenceRadius = 57500.0;
+        VoxelGeometryRadius = 57500.0;
         TerritoryTileSize = 500.0;
         FileName = "orepools-4.json";
         NumberOfTiles = 52922; //This is a guess

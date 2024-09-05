@@ -6,7 +6,7 @@ public class Madis : Planet
 {
     public Madis()
     {
-        AltitudeReferenceRadius = 410000.0;
+        VoxelGeometryRadius = 410000.0;
         TerritoryTileSize = 1000.0;
         FileName = "orepools-1.json";
         NumberOfTiles = 30721;

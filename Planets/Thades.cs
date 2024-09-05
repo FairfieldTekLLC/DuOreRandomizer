@@ -6,7 +6,7 @@ public class Thades : Planet
 {
     public Thades()
     {
-        AltitudeReferenceRadius = 49000.0;
+        VoxelGeometryRadius = 49000.0;
         TerritoryTileSize = 500.0;
 
         FileName = "orepools-3.json";

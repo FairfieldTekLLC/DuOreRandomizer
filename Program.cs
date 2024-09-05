@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Ore_Randomizer.Classes;
 using Ore_Randomizer.Planets;
 
@@ -11,6 +12,11 @@ internal static class Program
     [STAThread]
     private static void Main()
     {
+    uint[] t = new uint[10]; 
+    
+        var tt = NQutils.Core.Shared.Tile.NQGetTileNeighbours(126000, 500.0000305175781, 32119, t);
+        Console.Write(tt);
+        return;
         new Alioth().GenerateOrePool();
 
         new AliothMoon1().GenerateOrePool();
