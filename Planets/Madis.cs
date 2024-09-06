@@ -7,7 +7,7 @@ public class Madis : Planet
     public Madis()
     {
         VoxelGeometryRadius = 45000.0;
-        TerritoryTileSize =500.0 ;
+        TerritoryTileSize = 500.0;
         FileName = "orepools-1.json";
         NumberOfTiles = 30721;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

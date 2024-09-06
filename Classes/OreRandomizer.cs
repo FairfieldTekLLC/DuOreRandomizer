@@ -1,10 +1,9 @@
 ﻿namespace Ore_Randomizer.Classes;
 
-
 public static class OreRandomizer
 {
     /// <summary>
-    /// This function generates the ore file for each planet.
+    ///     This function generates the ore file for each planet.
     /// </summary>
     /// <param name="planet"></param>
     public static void GenerateOrePool(this IIPlanet planet)
@@ -37,11 +36,11 @@ public static class OreRandomizer
         //Write opening brace
         WriteData("{");
 
-        
-        int oreIdx = 1;
-        int maxOreIdx = planet.OnPlanetOres.Count;
 
-        
+        var oreIdx = 1;
+        var maxOreIdx = planet.OnPlanetOres.Count;
+
+
         Console.WriteLine("Processing Planet: " + planet.GetType());
         //Foreach ore definition in the planets ore defs.
         foreach (var def in planet.OnPlanetOres)
@@ -49,35 +48,34 @@ public static class OreRandomizer
             Console.WriteLine("Processing Ore Type: " + def.OreType);
             WriteData($"    \"{def.OreType}\": {{");
 
-            int tileId = 1;
+            var tileId = 1;
             while (tileId <= planet.NumberOfTiles)
             {
                 Console.WriteLine("Processing Tile: " + tileId);
                 //If the ore chance is 100 percent than just pull a random in range and continue.
                 if (def.ChanceOfHavingOre == 100)
                 {
-                    int oreAmount = random.Next(def.MinAmount, def.MaxAmount);
+                    var oreAmount = random.Next(def.MinAmount, def.MaxAmount);
                     Poa(tileId, oreAmount);
                     tileId++;
                     continue;
                 }
 
                 //Now we handle runs.
-                int rnd = random.Next(0, 100);
+                var rnd = random.Next(0, 100);
                 //Do we have ore?
                 if (rnd < def.ChanceOfHavingOre)
                 {
-                    if (def.MaxFlowerSize == 0) 
+                    if (def.MaxFlowerSize == 0)
                         def.MaxFlowerSize = 1;
 
                     //how long is the run?
-                    int run = random.Next(1, def.MaxFlowerSize);
-                    
+                    var run = random.Next(1, def.MaxFlowerSize);
+
                     //for the next run tileid's lets give them the same ore.
-                    for (int i = 0; i < run; i++)
+                    for (var i = 0; i < run; i++)
                     {
-                        
-                        int oreAmount = random.Next(def.MinAmount, def.MaxAmount);
+                        var oreAmount = random.Next(def.MinAmount, def.MaxAmount);
                         tileId += i;
                         if (tileId > planet.NumberOfTiles)
                             break;

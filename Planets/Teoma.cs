@@ -7,7 +7,7 @@ public class Teoma : Planet
     public Teoma()
     {
         VoxelGeometryRadius = 61000.0;
-        TerritoryTileSize =500.0 ;
+        TerritoryTileSize = 500.0;
         FileName = "orepools-8.json";
         NumberOfTiles = 60751;
         OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400));

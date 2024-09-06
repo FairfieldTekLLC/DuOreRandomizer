@@ -1,7 +1,7 @@
 ﻿namespace Ore_Randomizer.Classes;
 
 /// <summary>
-/// Interface used to make all planet classes the same.
+///     Interface used to make all planet classes the same.
 /// </summary>
 public interface IIPlanet
 {

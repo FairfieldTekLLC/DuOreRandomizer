@@ -1,70 +1,70 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
- 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Ore_Randomizer</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-  </ItemGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Ore_Randomizer</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="Backend">
-      <HintPath>Dlls\Backend.dll</HintPath>
-    </Reference>
-    <Reference Include="Backend.PubSub">
-      <HintPath>Dlls\Backend.PubSub.dll</HintPath>
-    </Reference>
-    <Reference Include="BotLib">
-      <HintPath>Dlls\BotLib.dll</HintPath>
-    </Reference>
-    <Reference Include="Interfaces">
-      <HintPath>Dlls\Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="NQutils">
-      <HintPath>Dlls\NQutils.dll</HintPath>
-    </Reference>
-    <Reference Include="Router">
-      <HintPath>Dlls\Router.dll</HintPath>
-    </Reference>
-    <Reference Include="Router.Orleans">
-      <HintPath>Dlls\Router.Orleans.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <None Update="Dlls\Backend.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Dlls\Backend.PubSub.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Dlls\BotLib.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Dlls\Interfaces.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Dlls\NQutils.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Dlls\Router.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Dlls\Router.Orleans.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Dlls\libsharedModule.so">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Dlls\sharedModule.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+    <ItemGroup>
+        <Reference Include="Backend">
+            <HintPath>Dlls\Backend.dll</HintPath>
+        </Reference>
+        <Reference Include="Backend.PubSub">
+            <HintPath>Dlls\Backend.PubSub.dll</HintPath>
+        </Reference>
+        <Reference Include="BotLib">
+            <HintPath>Dlls\BotLib.dll</HintPath>
+        </Reference>
+        <Reference Include="Interfaces">
+            <HintPath>Dlls\Interfaces.dll</HintPath>
+        </Reference>
+        <Reference Include="NQutils">
+            <HintPath>Dlls\NQutils.dll</HintPath>
+        </Reference>
+        <Reference Include="Router">
+            <HintPath>Dlls\Router.dll</HintPath>
+        </Reference>
+        <Reference Include="Router.Orleans">
+            <HintPath>Dlls\Router.Orleans.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Dlls\Backend.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Dlls\Backend.PubSub.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Dlls\BotLib.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Dlls\Interfaces.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Dlls\NQutils.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Dlls\Router.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Dlls\Router.Orleans.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Dlls\libsharedModule.so">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Dlls\sharedModule.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 
 </Project>

@@ -10,7 +10,7 @@ public class Alioth : Planet
         TerritoryTileSize = 500.0000305175781;
         FileName = "orepools-2.json";
         NumberOfTiles = 259471;
-        OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400,100,20));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.AluminiumOre, 100, 400, 100, 20));
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400, 100, 20));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400, 100, 20));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400, 100, 20));

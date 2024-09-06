@@ -2,7 +2,8 @@
 
 public class PlanetOreDef
 {
-    public PlanetOreDef(string oreType, int minAmount, int maxAmount, int chanceOfHavingOre = 100, int maxFlowerSize = 0)
+    public PlanetOreDef(string oreType, int minAmount, int maxAmount, int chanceOfHavingOre = 100,
+        int maxFlowerSize = 0)
     {
         OreType = oreType;
         MinAmount = minAmount;
