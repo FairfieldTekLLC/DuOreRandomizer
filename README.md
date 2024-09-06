@@ -30,6 +30,7 @@
 
 - Navigate to the main folder of the downloaded repository.
 - Ensure that the folder contains `generated_files` and `move.sh`.
+- if the folder does not contain `generated_files` folder then you must create a new folder called `generated_files`.
 - Build and start the Docker container by running:
 
   `docker compose up -d`
