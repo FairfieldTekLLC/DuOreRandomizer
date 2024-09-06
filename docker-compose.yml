@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  ore-randomizer:
+    build: .
+    container_name: ore_randomizer_container
+    volumes:
+      - ./generated_files:/app/data
