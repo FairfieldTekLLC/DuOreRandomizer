@@ -14,7 +14,7 @@ public class Thades : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.CopperOre, 10, 200, 20, 9));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.SilverOre, 10, 200, 10, 6));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.CopperOre, 10, 200, 10, 9));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.SilverOre, 10, 200, 7, 6));
     }
 }

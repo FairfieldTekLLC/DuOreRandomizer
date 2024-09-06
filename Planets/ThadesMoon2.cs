@@ -14,7 +14,7 @@ public class ThadesMoon2 : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.CalciumOre, 10, 200, 60));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.NickelOre, 10, 200, 35));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.CalciumOre, 10, 200, 12,12));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.NickelOre, 10, 200, 13,8));
     }
 }

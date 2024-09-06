@@ -14,7 +14,7 @@ public class AliothMoon4 : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.ChromiumOre, 0, 200, 10, 4));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.NickelOre, 0, 200, 10, 4));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.ChromiumOre, 0, 200, 20, 4));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.NickelOre, 0, 200, 20, 4));
     }
 }

@@ -14,6 +14,6 @@ public class ThadesAsteroid02 : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.ManganeseOre, 10, 20, 10, 15));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.ManganeseOre, 10, 20, 4, 15));
     }
 }

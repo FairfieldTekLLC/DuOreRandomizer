@@ -14,7 +14,7 @@ public class Teoma : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.LithiumOre, 10, 200, 20, 9));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.FluorineOre, 10, 200, 30, 5));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.LithiumOre, 10, 200, 10, 9));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.FluorineOre, 10, 200, 13, 5));
     }
 }

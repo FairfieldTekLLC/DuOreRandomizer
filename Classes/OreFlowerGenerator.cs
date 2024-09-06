@@ -28,6 +28,15 @@ namespace Ore_Randomizer.Classes
 
         public static void GenerateOrePoolFlowers(this IIPlanet planet)
         {
+            if (File.Exists(planet.FileName+".log"))
+                File.Delete(planet.FileName+".log");
+            //Start a new file
+            File.WriteAllText(planet.FileName+".log", "");
+            void Log(string data)
+            {
+                Console.WriteLine(data);
+                File.AppendAllText(planet.FileName +".log",data+"\r\n");
+            }
             void WriteData(string data)
             {
                 File.AppendAllText(planet.FileName, data + "\r\n");
@@ -57,7 +66,7 @@ namespace Ore_Randomizer.Classes
             List<OreDefinition> OresOnPlanet = new();
             foreach (PlanetOreDef def in planet.OnPlanetOres)
             {
-                
+                Log("Generating " + def.OreType + " on Planet " + planet.ToString());
                 
                 Random random = new Random();
                 OreDefinition definition = new OreDefinition();
@@ -83,7 +92,7 @@ namespace Ore_Randomizer.Classes
                             def.MaxFlowerSize = 1;
 
                         int realFlowerSize = random.Next(2, def.MaxFlowerSize);
-                        
+                        Log("Generating " + def.OreType + " Flower Size is " + realFlowerSize);
                         
 
                         //Track the tiles we have used already
@@ -125,15 +134,44 @@ namespace Ore_Randomizer.Classes
                             foreach (int usedTile in UsedTiles.Where(usedTile => tiles.Contains(usedTile)))
                                 tiles.Remove(usedTile);
 
+                            bool dataChanged = false;
                             foreach (int tile in tiles)
                             {
-                                if (definition.OreAmounts[tile] != 0)
+                                if (definition.OreAmounts[tile] == 0)
                                 {
+                                    dataChanged = true;
                                     definition.OreAmounts[tile] = random.Next(def.MinAmount, minAmount);
                                     UsedTiles.Add(tile);
                                     if (UsedTiles.Count >= realFlowerSize)
                                         break;
                                 }
+                            }
+
+                            if (!dataChanged)
+                            {
+                                //All tiles around us already have a value
+                                Log("No tiles left to expand to. Demand: " + realFlowerSize + " Actual: " +
+                                    UsedTiles.Count);
+                                break;
+                            }
+
+                            if (tiles.Count == 1)
+                            {
+                                List<int> avail = new();
+                                foreach (var tile in UsedTiles)
+                                {
+                                    avail.AddRange(GetSurroundingTiles(tile));
+                                }
+
+                                avail = avail.Distinct().ToList();
+                                
+                                foreach (var tile in avail.ToList())
+                                {
+                                    if (UsedTiles.Contains(tile))
+                                        avail.Remove(tile);
+                                }
+
+                                tiles = avail;
                             }
                         }
                     }

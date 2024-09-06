@@ -35,3 +35,5 @@ obj/Debug/net6.0-windows/apphost.exe
 .vs/Ore Randomizer/FileContentIndex/8a89f0c5-c21d-4fb8-90a9-aa13286a98a4.vsidx
 .vs/Ore Randomizer/FileContentIndex/34d5fd7a-aa21-4d99-9538-bcd8948f24ca.vsidx
 .vs/Ore Randomizer/FileContentIndex/ebc00037-c04c-44be-ab72-6f3cac2856df.vsidx
+.bin
+.obj

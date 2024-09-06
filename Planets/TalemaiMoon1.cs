@@ -15,6 +15,6 @@ public class TalemaiMoon1 : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.CalciumOre, 10, 200, 20, 5));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.VanadiumOre, 10, 200, 10, 4));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.VanadiumOre, 10, 200, 6, 4));
     }
 }

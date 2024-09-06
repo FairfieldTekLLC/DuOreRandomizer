@@ -14,7 +14,7 @@ public class MadisMoon2 : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.CopperOre, 10, 200, 20, 4));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.LithiumOre, 10, 200, 20, 5));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.CopperOre, 10, 200, 16, 4));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.LithiumOre, 10, 200, 13, 5));
     }
 }

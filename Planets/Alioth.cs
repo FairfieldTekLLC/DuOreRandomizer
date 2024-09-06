@@ -14,7 +14,7 @@ public class Alioth : Planet
         OnPlanetOres.Add(new PlanetOreDef(Ores.CarbonOre, 100, 400, 100, 20));
         OnPlanetOres.Add(new PlanetOreDef(Ores.IronOre, 100, 400, 100, 20));
         OnPlanetOres.Add(new PlanetOreDef(Ores.SiliconOre, 100, 400, 100, 20));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.CalciumOre, 10, 200, 15, 14));
-        OnPlanetOres.Add(new PlanetOreDef(Ores.NickelOre, 10, 200, 15, 7));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.CalciumOre, 10, 200, 7, 14));
+        OnPlanetOres.Add(new PlanetOreDef(Ores.NickelOre, 10, 200, 7, 7));
     }
 }
